@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --env-file ..env watch src/http/server.ts",
+    "dev": "tsx watch --env-file .env src/http/server.ts",
     "seed": "tsx --env-file .env src/db/seed.ts"
   },
   "keywords": [],
@@ -19,8 +19,12 @@
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
-    "fastify": "^2.11.0",
+    "fastify": "^5.0.0",
+    "fastify-type-provider-zod": "^4.0.2",
+    "pg": "^8.13.0",
     "postgres": "^3.4.4",
     "zod": "^3.23.8"
   }

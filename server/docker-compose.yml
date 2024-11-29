@@ -2,10 +2,10 @@ name: goal-focus-server
 
 services:
   pg:
-    image: bitnami/postgresql:13.16.0
+    image: postgres:latest
     ports:
-      - '5432:5432'
+      - '5433:5432'
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=inorbit
+      - POSTGRES_USER=GoalFocus
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=GoalFocus
