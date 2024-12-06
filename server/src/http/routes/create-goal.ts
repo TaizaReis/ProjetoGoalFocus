@@ -4,12 +4,12 @@ import { createGoal } from '../../db/functions/create-goal';
 
 export const createGoalRoute: FastifyPluginAsyncZod = async  (app) => {
     app.post(
-        '/gaols',
+        '/goals',
         {
           schema: {
             body: z.object({
               title: z.string(),
-              desiredWeeklyFrequency: z.number().int().min(7).max(7),
+              desiredWeeklyFrequency: z.number().int().min(1).max(7),
             }),
           },
         },
