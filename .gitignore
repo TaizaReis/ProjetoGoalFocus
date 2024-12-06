@@ -1,0 +1,49 @@
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build e dist
+dist/
+build/
+out/
+
+# Diretórios de dependências
+/GoalFocus/node_modules
+/GoalFocus/server/node_modules
+
+# Arquivos de ambiente
+.env
+/GoalFocus/server/.env
+
+# Docker
+docker-compose.override.yml
+pgdata/
+
+# VSCode
+.vscode/
+/GoalFocus/server/.vscode/
+
+# Migrations
+/GoalFocus/server/.migrations
+
+# Arquivos de configuração e lock de pacotes
+/GoalFocus/package-lock.json
+/GoalFocus/server/package-lock.json
+
+# Arquivos de banco de dados e schema
+/GoalFocus/server/src/db/
+/GoalFocus/server/src/db/index.ts
+/GoalFocus/server/src/db/schema.ts
+/GoalFocus/server/src/db/seed.ts
+
+# Outros arquivos e configurações de build e compilação
+drizzle.config.ts
+biome.json
+tsconfig.json
+
+
